@@ -73,7 +73,7 @@ Git迅速成为最流行的分布式版本控制系统，尤其是2008年，GitH
 
 由于大一时已经安装好了，所以不再赘述安装过程，安装成功截图如下：
 
-![1](https://github.com/MVPYPC/Git-learning-record/tree/main/picture/1.png)
+![1](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/1.png?raw=true)
 
 > Git GUI好像更好用
 
@@ -97,7 +97,7 @@ pwd                    //pwd命令用于显示当前目录
 
 执行后的Git界面如下：
 
-![image-20220114171616680](https://github.com/MVPYPC/Git-learning-record/tree/main/picture/2.png)
+![image-20220114171616680](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/2.png?raw=true)
 
 即显示这里进入了/c/Users/86072/Documents/Git 目录下。
 
@@ -105,7 +105,7 @@ pwd                    //pwd命令用于显示当前目录
 
 通过git init命令把这个目录变成git管理的仓库，如下
 
-![image-20220114171940806](https://github.com/MVPYPC/Git-learning-record/tree/main/picture/3.png)
+![image-20220114171940806](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/3.png?raw=true)
 
 ```java
 git init              //git init 命令将当前目录变成Git可以管理的仓库
@@ -113,7 +113,7 @@ git init              //git init 命令将当前目录变成Git可以管理的�
 
 创建后仓库内会有一个.git的目录，在本地无法查看，可使用ls -ah查看如下：
 
-![image-20220114172332080](https://github.com/MVPYPC/Git-learning-record/tree/main/picture/4.png)
+![image-20220114172332080](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/4.png?raw=true)
 
 >### 二进制 || 文本？
 >
@@ -175,7 +175,7 @@ git diff    //git diff顾名思义就是查看difference，显示的格式正是
 
 更新本文件，保存后运行`git status`如图所示：
 
-![image-20220114220233046](https://github.com/MVPYPC/Git-learning-record/tree/main/picture/5.png)
+![image-20220114220233046](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/5.png?raw=true)
 
 这里git告诉我们`Learning_Notes.md`文件被更改了，但是
 
@@ -187,7 +187,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 前文提到，这里我们知道了该文件被更改过，但是如果能知道具体的更改在哪就更好了，使用`git diff`命令可以显示具体的更改。具体如下图：
 
-![image-20220114221538235](https://github.com/MVPYPC/Git-learning-record/tree/main/picture/6.png)
+![image-20220114221538235](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/6.png?raw=true)
 
 如图，可以看到所有的更改，知道了做了什么修改后便可以放心的提交到仓库了。
 
@@ -207,15 +207,15 @@ git log --pretty=oneline
 
 > 这里注意，有可能版本过多以后会出现进入版本管理器的情况，这时候按回车查看下一行直到（END）结束。可以按q键退出。
 
-![image-20220114223244179](https://github.com/MVPYPC/Git-learning-record/tree/main/picture/7.png)
+![image-20220114223244179](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/7.png?raw=true)
 
-简易版的如下图：![image-20220114223644821](https://github.com/MVPYPC/Git-learning-record/tree/main/picture/8.png)
+简易版的如下图：![image-20220114223644821](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/8.png?raw=true)
 
 其中黄色的那些十六进制数是Git的`commit id`，用于识别各个版本，一般前几位即可。
 
 这里新建了两个版本，即`version back initial`和`version back after`，现在HEAD指向...after，准备回退到...initial的版本。
 
-![image-20220114225101835](https://github.com/MVPYPC/Git-learning-record/tree/main/picture/9.png)
+![image-20220114225101835](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/9.png?raw=true)
 
 ***回退***
 
@@ -237,7 +237,7 @@ git reset --hard HEAD^    //回退到上一个版本，其中--hard参数现在�
 git reflog    //用来记录你的每一次命令
 ```
 
-![image-20220114231555449](https://github.com/MVPYPC/Git-learning-record/tree/main/picture/10.png)
+![image-20220114231555449](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/10.png?raw=true)
 
 如图，可以查看历史所有版本以及HEAD指针的指向，感觉有时候比`git log`好用。
 
