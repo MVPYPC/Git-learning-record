@@ -207,9 +207,10 @@ git log --pretty=oneline
 
 > 这里注意，有可能版本过多以后会出现进入版本管理器的情况，这时候按回车查看下一行直到（END）结束。可以按q键退出。
 
-![image-20220114223244179](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/7.png?raw=true)
+![image-20220114223244179](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/7.png?raw=true)  
 
-简易版的如下图：![image-20220114223644821](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/8.png?raw=true)
+简易版的如下图：  
+![image-20220114223644821](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/8.png?raw=true)
 
 其中黄色的那些十六进制数是Git的`commit id`，用于识别各个版本，一般前几位即可。
 
