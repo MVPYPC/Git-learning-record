@@ -205,7 +205,7 @@ git log --pretty=oneline
 
 用`git log`命令如下图：可以看到按照提交顺序由近到远排列，且能看到提交参数中的“说明”
 
-> 这里注意，有可能版本过多以后会出现进入版本管理器的情况，这时候按回车查看下一行直到（END）结束。可以按q键退出。
+> 这里注意，有可能版本过多以后会出现进入版本管理器的情况，这时候按回车查看下一行直到（END）结束。可以按<kbd>q键</kbd>退出。
 
 ![image-20220114223244179](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/7.png?raw=true)  
 
