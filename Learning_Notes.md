@@ -305,4 +305,42 @@ git diff HEAD -- Learning_Notes.md  //最后是文件名，其中 -- 很重要�
 还可以使用`git reset HEAD <file>`命令把暂存区的修改撤销掉（unstage），重新放回工作区
 
 > 噢~我懂了，在这里写没有保存，Git也会视为没有更新，保存以后用`git status`命令才会显示更改过。
+#### 删除文件
 
+添加`delete.txt`文件，如下图
+
+![image-20220118225204837](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/12.png?raw=true)
+
+删除命令是`rm`，代码：
+
+```java
+rm delete.txt        //删除delete.txt文件
+```
+
+那么这时候，工作区和版本库产生了差别，使用`git status`命令可以告诉我们哪些文件被删除了，如下图
+
+![image-20220118225545350](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/13.png?raw=true)
+
+这时候，我们有两个选择
+
+1. 的确要删除这个文件，那么直接提交`git commit -m ""`即可
+
+2. 删错了，那么我们想要将版本库中的该文件返回工作区，使用`checkout`命令：
+
+   ```java
+   git checkout -- delete.txt
+   ```
+
+   即可还原。
+
+到这里我们可以猜到，`git checkout`命令的作用就是用版本库里的版本替换工作区里的版本。
+
+> `git restore` 是git 2.23版本新增的命令，用来代替身兼数职的git checkout。功能是一样的。
+
+### ==远程仓库==
+
+如何使用伟大的Github进行自动代码托管捏？
+
+首先，需要`ssh`密钥，不再赘述。
+
+当建立好ssh密钥公钥后，
