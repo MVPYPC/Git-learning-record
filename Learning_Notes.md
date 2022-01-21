@@ -395,4 +395,5 @@ GitHub给出的地址不止一个，还可以用`https://github.com/michaelliao/
 > 踩坑记录
 >
 > 我因为是先搞了github，后来才学习的git技术，所以有很多历史遗留仓库并没有跟本地仓库链接，尤其是我现在正在更新的一些库，所以要将他们进行链接可以将其同步以后使用`git push origin main -f`这个 -f 是force的意思，即强迫将本地的push到远程仓库中去。
+> 如何在vscode中提交?
 
