@@ -348,6 +348,7 @@ rm delete.txt        //删除delete.txt文件
 
 谨记:exclamation::exclamation::exclamation::exclamation::exclamation::exclamation:在教程行不通的情况下一定要去看==官方文档==
 
+#### 添加远程库
 当建立好ssh密钥公钥后，需要建立一个远程仓库和本地仓库的关联，使用`git remote add`命令
 
 ```java
@@ -367,15 +368,27 @@ git push origin main
 
 廖老师的教程上是使用的master分支，这里如果是已经建立好的仓库就会有一个main分支，所以我是push到main分支上，感觉比较方便。
 
-> 至于为什么有这个变化，在公元 2020年 6 月份，受美国大规模的 “Black Lives Matter”运动影响，为了安抚愈演愈烈的民众情绪，GitHub 就宣布将替换掉 master 等术语，以避免联想奴隶制。现如今，在外界一些声音的催促下，这一举措则终于要正式落地了。
+> 至于为什么有这个变化，在公元 2020年 6 月份，受美国大规模的 “Black Lives Matter”运动影响，为了安抚愈演愈烈的民众情绪，GitHub 就宣布将替换掉 master 等术语，以避免联想奴隶制。同年10月份，在外界一些声音的催促下，这一举措则终于正式落地了。
 >
 > 不得不说，吃饱了闲的。:sweat_smile::sweat_smile::sweat_smile:
 
 而且这玩意牛逼的地方在于，他只更新变动的，不会把github上有但是本地没有的给删了。
 
-顺便，我下载了[github桌面版](https://desktop.github.com/)，感觉很香，每次就这么在change里面点commit然后点push就行了
+btw，我下载了[github桌面版](https://desktop.github.com/)，感觉很香，每次就这么在change里面点commit然后点push就行了
 
 > push就在fetch那个位置，在commit以后就会变成push
 
 ![image-20220121162640096](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/14.png?raw=true?)
+
+#### 克隆远程库
+
+使用`git clone`命令克隆一个远程库到本地上来
+
+```java
+git clone git@github:MVPYPC/....  //这里暂时没啥有用的就不演示了，等有用武之地了再来更新
+```
+
+GitHub给出的地址不止一个，还可以用`https://github.com/michaelliao/gitskills.git`这样的地址。实际上，Git支持多种协议，默认的`git://`使用ssh，但也可以使用`https`等其他协议。
+
+使用`https`除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用`ssh`协议而只能用`https`。
 
