@@ -354,11 +354,13 @@ git remote add origin git@github.com:MVPYPC/Git-learning-record.git
     //MVPYPC/Git-learning-record是我的github名+仓库名
 ```
 
-下一步，就可以把本地库的所有内容推送到远程库上，使用`git push`命令
+下一步，就可以把本地库的所有内容推送到远程库上，使用`git push`命令，在此之前，建议使用`git remote -v`指令查看现在的远程库信息，若有需要删除的，使用`git remote rm <name>`删除远程库。
 
 ```java
 git push -u origin main
     //由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+git push origin main
+    //在以后的push或者fetch时就不用 -u 了
 ```
 
 廖老师的教程上是使用的master分支，这里如果是已经建立好的仓库就会有一个main分支，所以我是push到main分支上，感觉比较方便。
@@ -369,7 +371,7 @@ git push -u origin main
 
 而且这玩意牛逼的地方在于，他只更新变动的，不会把github上有但是本地没有的给删了。
 
-顺便，我下载了github桌面版，感觉很香，每次就这么在change里面点commit然后点push就行了
+顺便，我下载了[github桌面版](https://desktop.github.com/)，感觉很香，每次就这么在change里面点commit然后点push就行了
 
 > push就在fetch那个位置，在commit以后就会变成push
 
