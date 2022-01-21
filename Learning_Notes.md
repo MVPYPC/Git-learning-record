@@ -368,3 +368,9 @@ git push -u origin main
 > 不得不说，吃饱了闲的。:sweat_smile::sweat_smile::sweat_smile:
 
 而且这玩意牛逼的地方在于，他只更新变动的，不会把github上有但是本地没有的给删了。
+
+顺便，我下载了github桌面版，感觉很香，每次就这么在change里面点commit然后点push就行了
+
+> push就在fetch那个位置，在commit以后就会变成push
+
+![image-20220121162640096](C:\Users\86072\Documents\Git\picture\14.png)
