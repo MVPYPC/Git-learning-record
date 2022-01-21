@@ -346,6 +346,8 @@ rm delete.txt        //删除delete.txt文件
 
 一定要赘述:exclamation::exclamation::exclamation::exclamation::exclamation::exclamation::exclamation::exclamation:这里耗费了好多时间，结果就是ssh密钥的问题，本来我大一时候绑定了一个ssh密钥，然后我就直接跳过了生成密钥的步骤，结果一直说无法取得我的github的权限，结果:exclamation::exclamation::exclamation::exclamation::exclamation:这个ssh密钥要是一年没用，就会被github删除，或者说失效，我就一直卡在这里，廖老师的教程上没有这方面的经验，特此记录一下。
 
+谨记:exclamation::exclamation::exclamation::exclamation::exclamation::exclamation:在教程行不通的情况下一定要去看==官方文档==
+
 当建立好ssh密钥公钥后，需要建立一个远程仓库和本地仓库的关联，使用`git remote add`命令
 
 ```java
