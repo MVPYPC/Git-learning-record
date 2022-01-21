@@ -373,4 +373,5 @@ git push -u origin main
 
 > push就在fetch那个位置，在commit以后就会变成push
 
-![image-20220121162640096](C:\Users\86072\Documents\Git\picture\14.png)
+![image-20220121162640096](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/14.png?raw=true?)
+
