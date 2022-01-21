@@ -243,7 +243,7 @@ git reflog    //用来记录你的每一次命令
 
 ---
 
-### 工作区 || 暂存区？
+#### 工作区 || 暂存区？
 
 #### 工作区（Working Directory）
 
@@ -266,7 +266,7 @@ Git的版本库里存了很多东西，其中**最重要的就是称为stage（�
 
 ---
 
-### 管理修改
+#### 管理修改
 
 划重点：==Git管理的是修改，而不是文件==
 
@@ -282,7 +282,7 @@ git diff HEAD -- Learning_Notes.md  //最后是文件名，其中 -- 很重要�
 
 ---
 
-### 撤销修改
+#### 撤销修改
 
 ~~自然，你是不会犯错的。  ——廖雪峰~~
 
@@ -305,11 +305,12 @@ git diff HEAD -- Learning_Notes.md  //最后是文件名，其中 -- 很重要�
 还可以使用`git reset HEAD <file>`命令把暂存区的修改撤销掉（unstage），重新放回工作区
 
 > 噢~我懂了，在这里写没有保存，Git也会视为没有更新，保存以后用`git status`命令才会显示更改过。
+
 #### 删除文件
 
 添加`delete.txt`文件，如下图
 
-![image-20220118225204837](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/12.png?raw=true)
+![image-20220118225204837](C:\Users\86072\Documents\Git\pic\12.png)
 
 删除命令是`rm`，代码：
 
@@ -319,7 +320,7 @@ rm delete.txt        //删除delete.txt文件
 
 那么这时候，工作区和版本库产生了差别，使用`git status`命令可以告诉我们哪些文件被删除了，如下图
 
-![image-20220118225545350](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/13.png?raw=true)
+![image-20220118225545350](C:\Users\86072\Documents\Git\pic\13.png)
 
 这时候，我们有两个选择
 
@@ -341,6 +342,9 @@ rm delete.txt        //删除delete.txt文件
 
 如何使用伟大的Github进行自动代码托管捏？
 
-首先，需要`ssh`密钥，不再赘述。
+首先，需要`ssh`密钥，~~不再赘述。~~
+
+一定要赘述:exclamation::exclamation::exclamation::exclamation::exclamation::exclamation::exclamation::exclamation:这里耗费了好多时间，结果就是ssh密钥的问题，本来我大一时候绑定了一个ssh密钥，然后我就直接跳过了生成密钥的步骤，结果一直说无法取得我的github的权限，结果:exclamation::exclamation::exclamation::exclamation::exclamation:这个ssh密钥要是一年没用，就会被github删除，或者说失效，我就一直卡在这里，廖老师的教程上没有这方面的经验，特此记录一下。
 
 当建立好ssh密钥公钥后，
+
