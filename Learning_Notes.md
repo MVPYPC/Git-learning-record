@@ -398,4 +398,9 @@ GitHub给出的地址不止一个，还可以用`https://github.com/michaelliao/
 如何在vscode中提交?艹艹艹艹艹
 nmdwsm
 
+创建新库时可能git bash默认master分支，可以使用`git branch -m oldName newName`来重命名
+
+```java
+git branch -m master main
+```
 
