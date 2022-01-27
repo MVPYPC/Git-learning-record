@@ -414,11 +414,11 @@ git branch -m master main
 
 一开始的时候，`master`分支是一条线，Git用`master`指向最新的提交，再用`HEAD`指向`master`，就能确定当前分支，以及当前分支的提交点：
 
-![git-br-initial](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/15.png?raw=true?)
+![git-br-initial](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/15.png?raw=true)
 
 当我们创建新的分支，例如`dev`时，Git新建了一个指针叫`dev`，指向`master`相同的提交，再把`HEAD`指向`dev`，就表示当前分支在`dev`上：
 
-![git-br-create](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/16.png?raw=true?)
+![git-br-create](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/16.png?raw=true)
 
 你看，Git创建一个分支很快，因为除了增加一个`dev`指针，改改`HEAD`的指向，工作区的文件都没有任何变化！
 
