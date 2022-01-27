@@ -404,3 +404,35 @@ nmdwsm
 git branch -m master main
 ```
 
+>这段时间过年吃饭较多，还要准备考研资料，实在没有心情学git，现在我已经基本能够通过`git bash`,`github desktop`,`idea`,`vscode`合作进行本地和远程（github.com/mvpypc）仓库的同步，感觉太方便了！
+
+### 分支管理
+
+#### 创建与合并分支
+
+在在`版本回退`里，我们已经知道，每次提交，Git都把它们串成一条时间线，这条时间线就是一个分支。截止到目前，只有一条时间线，在Git里，这个分支叫主分支，即`main`分支。`HEAD`严格来说不是指向提交，而是指向`main`，`main`才是指向提交的，所以，`HEAD`指向的就是当前分支。
+
+一开始的时候，`master`分支是一条线，Git用`master`指向最新的提交，再用`HEAD`指向`master`，就能确定当前分支，以及当前分支的提交点：
+
+![git-br-initial](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/15.png?raw=true?)
+
+当我们创建新的分支，例如`dev`时，Git新建了一个指针叫`dev`，指向`master`相同的提交，再把`HEAD`指向`dev`，就表示当前分支在`dev`上：
+
+![git-br-create](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/16.png?raw=true?)
+
+你看，Git创建一个分支很快，因为除了增加一个`dev`指针，改改`HEAD`的指向，工作区的文件都没有任何变化！
+
+不过，从现在开始，对工作区的修改和提交就是针对`dev`分支了，比如新提交一次后，`dev`指针往前移动一步，而`master`指针不变：
+
+![git-br-dev-fd](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/17.png?raw=true?)
+
+假如我们在`dev`上的工作完成了，就可以把`dev`合并到`master`上。Git怎么合并呢？最简单的方法，就是直接把`master`指向`dev`的当前提交，就完成了合并：
+
+![git-br-ff-merge](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/18.png?raw=true?)
+
+所以Git合并分支也很快！就改改指针，工作区内容也不变！
+
+合并完分支后，甚至可以删除`dev`分支。删除`dev`分支就是把`dev`指针给删掉，删掉后，我们就剩下了一条`master`分支：
+
+![git-br-rm](https://github.com/MVPYPC/Git-learning-record/blob/main/picture/19.png?raw=true?)
+
